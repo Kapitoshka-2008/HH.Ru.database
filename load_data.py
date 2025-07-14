@@ -2,7 +2,7 @@ from api_hh import HHApi
 from db import create_database, get_connection, create_tables, insert_company, insert_vacancy
 from typing import List
 
-# Список id компаний (можно изменить по желанию)
+# Список id компаний
 EMPLOYER_IDS = [1740, 3529, 15478, 2180, 78638, 3776, 80, 733, 84585, 3127]
 
 def load_all_data(employer_ids: List[int] = EMPLOYER_IDS) -> None:
