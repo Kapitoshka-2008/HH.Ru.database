@@ -90,6 +90,7 @@ def insert_company(conn: connection, company: dict) -> int:
         conn.commit()
         return company_id
 
+
 def insert_vacancy(conn: connection, vacancy: dict, company_id: int) -> None:
     """
     Вставляет вакансию в таблицу vacancies.
@@ -111,4 +112,4 @@ def insert_vacancy(conn: connection, vacancy: dict, company_id: int) -> None:
             (vacancy.get('snippet') or {}).get('requirement'),
             (vacancy.get('snippet') or {}).get('responsibility')
         ))
-        conn.commit() 
+        conn.commit()

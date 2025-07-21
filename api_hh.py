@@ -1,6 +1,7 @@
 import requests
 from typing import List, Dict, Any
 
+
 class HHApi:
     """
     Класс для работы с API hh.ru: получение информации о компаниях и их вакансиях.
@@ -60,4 +61,4 @@ class HHApi:
         all_vacancies = []
         for emp_id in self.employer_ids:
             all_vacancies.extend(self.get_vacancies_for_employer(emp_id))
-        return all_vacancies 
+        return all_vacancies

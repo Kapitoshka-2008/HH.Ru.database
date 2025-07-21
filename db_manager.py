@@ -2,6 +2,7 @@ from typing import List, Tuple, Optional
 from psycopg2.extensions import connection
 from db import get_connection
 
+
 class DBManager:
     """
     Класс для работы с данными в БД PostgreSQL.
@@ -94,4 +95,4 @@ class DBManager:
         Закрывает соединение с БД.
         """
         if self.conn:
-            self.conn.close() 
+            self.conn.close()
