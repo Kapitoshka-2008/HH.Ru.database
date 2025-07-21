@@ -1,6 +1,7 @@
 from db_manager import DBManager
 from load_data import load_all_data
 
+
 def print_menu():
     print("""
     ========== Меню ==========
@@ -12,6 +13,7 @@ def print_menu():
     6. Поиск вакансий по ключевому слову
     0. Выйти
     """)
+
 
 def main():
     dbm = DBManager()
@@ -55,6 +57,7 @@ def main():
             break
         else:
             print("Некорректный ввод. Попробуйте снова.\n")
+
 
 if __name__ == "__main__":
     main()
